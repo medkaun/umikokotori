@@ -71,6 +71,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "poppinsthin";
+  scroll-behavior: smooth;
 }
 
 .semi-bold{
@@ -269,19 +270,6 @@ video {
   margin-left: 49%;
   margin-top: 19%;
 }
-/* video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
- background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
-  background-size: cover;
-  transition: 1s opacity;
-} */
 
 .modal-bg {
   width: 100%;
@@ -293,14 +281,6 @@ video {
   padding: auto;
 }
 
-/* .modal-window {
-  background-color: green;
-  width: 60%;
-  height: auto;
-  padding: 5%;
-  margin-left: 20%;
-  margin-top: 10%;
-} */
 
 .close {
   position: absolute;
@@ -321,9 +301,11 @@ video {
 }
 
 .bg.video-btn:hover, .close:hover, .playButton:hover, .pauseButton:hover,
-.buybutton:hover {
+.buybutton:hover, #scrolltotop:hover {
   cursor: pointer;
 }
+
+/* audio player */
 
 nav {
   width: 70%;
@@ -338,7 +320,7 @@ nav {
 
 .progressBar {
   z-index: -1;
-  margin-top: -60px;
+  margin-top: -57px;
   position: absolute;
   overflow: hidden;
   width: 0px;
@@ -399,4 +381,20 @@ nav {
 
 #song-container {
   margin-top: 10%;
+}
+
+/* end of player */
+
+#scrolltotop {
+  position: fixed;
+  float: right;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#scrolltotop.active {
+  pointer-events: auto;
+  opacity: 1;
 }

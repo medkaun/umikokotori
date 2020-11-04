@@ -1,11 +1,9 @@
+//video library
 
-  // Get the modal
   var modal = document.getElementById("modal");
 
-  // Get the button that opens the modal
   var btn = document.getElementsByClassName("video-btn");
 
-  // Get the <span> element that closes the modal
   var span = document.getElementById("close");
 
   var videoSrc
@@ -14,32 +12,17 @@ function openmodal(event) {
   modal.style.display = "block";
   videoSrc = $(this).data( "src" );
   $("#video").attr('src',videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" );
-  // var iFrame = document.getElementById( 'video' );
-  //   resizeIFrameToFitContent( iFrame );
 }
 
-// function resizeIFrameToFitContent( iFrame ) {
-//
-//     iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
-//     iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
-// }
-
-// When the user clicks the button, open the modal
 for (var i = 0 ; i < btn.length; i++){
   btn[i].addEventListener('click', openmodal);
 }
 
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
   $("#video").attr('src',videoSrc);
 }
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -55,12 +38,6 @@ var playButton = document.getElementsByClassName("playButton");
 var pauseButton = document.getElementsByClassName("pauseButton");
 
 var barSize = 493;
-// var bar = document.getElementsByClassName("defaultBar");
-// var progressBar = document.getElementsByClassName("progressBar");
-
-// for (var i = 0 ; i < playButton.length; i++){
-//   playButton[i].addEventListener('click', playTrack(i));
-// }
 
 for (var i = 0 ; i < playButton.length; i++){
   playButton[i].addEventListener('click', playTrack);
@@ -99,3 +76,20 @@ function update(track, bar) {
     bar.style.width = 0 + "px";
   }
 }
+
+//scroll to top
+
+const btnScrollToTop = document.getElementById("scrolltotop");
+
+window.addEventListener("scroll", function() {
+  if (window.pageYOffset > 100) {
+    btnScrollToTop.classList.add("active");
+  }
+  else {
+    btnScrollToTop.classList.remove("active");
+  }
+})
+
+btnScrollToTop.addEventListener("click", function() {
+  $("html, body").animate({ scrollTop: 0}, "slow");
+})

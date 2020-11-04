@@ -7,7 +7,7 @@
         <link href="../static/styles.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <!-- {% block style %}{% endblock %} -->
+        {% block style %}{% endblock %}
         <!-- <title>Into Nowhere Without The No</title> -->
 
     </head>
@@ -15,25 +15,22 @@
 
       <div id="modal"class="modal-bg">
         <button id="close"class="close">x</button>
-        <!-- <div class="modal-window"> -->
-          <!-- <button id="close"class="close">x</button> -->
-          <!-- <p>ALIOOOOO BLET</p> -->
-          <!-- width="560" height="315" -->
           <iframe class="video-frame" src="" id="video" allowscriptaccess="always"
           allow="autoplay" frameborder="0" allow="accelerometer; clipboard-write;
           encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!-- </div> -->
       </div>
 
-      <div class = "navbar">
+      <a id="scrolltotop"><img src="../static/images/homebtn.png"></a>
+
+      <div id = "navbar" class = "navbar">
         <div class = "navbar-left">
-          <a href="/video">SEE</a>
-          <a href="/music">LISTEN</a>
+          <a href="#videos">SEE</a>
+          <a href="#song-container">LISTEN</a>
           <a href="/umiko">UMIKO</a>
           <a href="/kotori">KOTORI</a>
         </div>
         <div class = "navbar-right">
-          <a href="/contact">LET'S TALK</a>
+          <a href="#contact">LET'S TALK</a>
           <a class="button-buy" href="/">BUY SOUNDS</a>
           <a href="/lt">LT</a>
           <a href="/en">EN</a>
@@ -50,7 +47,7 @@
           <img class="scroll-down" src="../static/images/scroll-down.png">
         </div>
 
-        <div class = "bg bgwhite">
+        <section id="videos" class = "bg bgwhite">
           <div class = "video-container">
             <button class = "bg video-btn" id="video-btn" data-toggle="modal"
             data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
@@ -74,7 +71,8 @@
             </button>
             <div class = "video-btn filler"></div>
           </div>
-        </div>
+        </section>
+
         <div class = "bg about">
           <img class = "about-logo" src="../static/images/logo.png">
           <p class="about-name semi-bold center">IN THE<br>
@@ -107,7 +105,7 @@
             for the sea...  Fearless is needed, not the brave, not the coward.<br>
             Fearless is needed to see that one does not know. That he is too<br>
             running in the nowhere... is it without the no?</p>
-          <div class="btn-center center"><a href="/" class = "button bold"> BOOK UMIKO KOTORI</a>
+          <div class="btn-center center"><a href="#contact" class = "button bold"> BOOK UMIKO KOTORI</a>
           </div>
         </div>
         <div class = "bg bgmint">
@@ -181,16 +179,17 @@
 
 
         </div>
-        <div class = "bg contact">
+
+        <section id = "contact" class = "bg contact">
           <p class="semi-bold center contact-text">WANT TO<br>FOLLOW?</p>
           <div class = "contact-icons">
-            <a class = "contact-icon" href="instagram.com"><img src="../static/images/ig.png"></a>
-            <a class = "contact-icon" href="facebook.com"><img src="../static/images/fb.png"></a>
-            <a class = "contact-icon" href="youtube.com"><img src="../static/images/yt.png"></a>
+            <a class = "contact-icon" href="https://instagram.com"><img src="../static/images/ig.png"></a>
+            <a class = "contact-icon" href="https://facebook.com"><img src="../static/images/fb.png"></a>
+            <a class = "contact-icon" href="https://youtube.com"><img src="../static/images/yt.png"></a>
           </div>
           <p class="semi-bold center contact-text">WANT EAR<br>MAGIC?</p>
           <p class="semi-bold center">BOOK THE EXPERIENCE:<a class="yellow" href="/">umikokotori@gmail.com</a></p>
-        </div>
+        </section>
         <script src="{{url_for('static', filename='script.js')}}"></script>
     </body>
   <html>
