@@ -9,6 +9,7 @@
   var videoSrc
 
 function openmodal(event) {
+  stopBgSound();
   modal.style.display = "block";
   videoSrc = $(this).data( "src" );
   $("#video").attr('src',videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" );
@@ -47,12 +48,16 @@ for (var i = 0 ; i < pauseButton.length; i++){
   pauseButton[i].addEventListener('click', pauseTrack);
 }
 
-function playTrack(event) {
+function stopBgSound() {
   for (var i = 0 ; i < tracks.length; i++){
     if (!tracks[i].paused){
       tracks[i].pause();
     }
   }
+}
+
+function playTrack(event) {
+  stopBgSound();
   var nav = ((event.target).parentNode).parentNode;
   var track = nav.getElementsByClassName("track");
   var bar = nav.getElementsByClassName("progressBar");

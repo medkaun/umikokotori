@@ -4,6 +4,11 @@
     Umiko Kotori
 {% endblock %}
 
+{% block lang %}
+<a href="/lt">LT</a>
+<a href="/">EN</a>
+{% endblock %}
+
 {% block home %}
   <video poster="../static/images/video-poster.png"
   id="bgvid" playsinline autoplay loop>
@@ -17,23 +22,23 @@
 
 {% block video %}
 <div class = "video-container">
-  <button class = "bg video-btn" id="video-btn" data-toggle="modal"
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
   data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
     <p class = "center video-name">LAZY<br>LOOSY<br>LADY</p>
   </button>
-  <button class = "bg video-btn" id="video-btn" data-toggle="modal"
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
   data-src="https://www.youtube.com/embed/sSqOZxR-HI4" data-target="#video-modal">
     <p class = "center video-name two-lines">BORN &<br>DYING</p>
   </button>
-  <button class = "bg video-btn" id="video-btn" data-toggle="modal"
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
   data-src="https://www.youtube.com/embed/YgSPaXgAdzE" data-target="#video-modal">
     <p class = "center video-name two-lines">SOAK &<br>SMOKE</p>
   </button>
-  <button class = "bg video-btn" id="video-btn" data-toggle="modal"
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
   data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
     <p class = "center video-name two-lines">IN<br>POCKET</p>
   </button>
-  <button class = "bg video-btn" id="video-btn" data-toggle="modal"
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
   data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
     <p class = "center video-name">MR.<br>FANTAS-<br>TIQUE</p>
   </button>
@@ -52,26 +57,26 @@
   <span class="semi-bold">I am running like animal with a memory.<br>
   But no memories.<br>
   In the nowhere without the no.</span><br><br>
-  While man always has the world before him - always only stands<br>
-  "facing opposite" & never enters "pure space" of the outside - the<br>
+  While man always has the world before him - always only stands
+  "facing opposite" & never enters "pure space" of the outside - the
   animal instead moves in the open "in a nowhere without the no"<br><br>
-  This album is about desire to expand inner nature, who is dancing<br>
-  as life itself. About animality of the inside, the instinct, the feel of<br>
-  what comes from within. About the company of two wolfs  who i<br>
-  teach to howl harmonically on my own funeral. About holding the<br>
-  mirror & trying to see who are you not, trying to grasp, <span class="semi-bold">how much<br>
-  of the man in the monkey there are</span>. But you excluded your self<br>
-  from the nature to recognize your self, and became a <span class="semi-bold">"Resembling<br>
-  man"</span> who must recognize him self in a non man in order to be a<br>
-  human. Homo as the animal it is only if it recognizes that it is not.<br>
-  Homo is constitutively nonhuman, he can receive all natures and<br>
+  This album is about desire to expand inner nature, who is dancing
+  as life itself. About animality of the inside, the instinct, the feel of
+  what comes from within. About the company of two wolfs  who i
+  teach to howl harmonically on my own funeral. About holding the
+  mirror & trying to see who are you not, trying to grasp, <span class="semi-bold">how much
+  of the man in the monkey there are</span>. But you excluded your self
+  from the nature to recognize your self, and became a <span class="semi-bold">"Resembling
+  man"</span> who must recognize him self in a non man in order to be a
+  human. Homo as the animal it is only if it recognizes that it is not.
+  Homo is constitutively nonhuman, he can receive all natures and
   all faces<br><br>
-  <span class="semi-bold">I am Animal I meet in boredom.</span><br>
-  It is the desire of happiness left in its pure state. The process of life<br>
-  & death is so fantastic, that I live like we never going to die, & i am<br>
-  already.  How one should play in the now is a question for me, not<br>
-  for the sea...  Fearless is needed, not the brave, not the coward.<br>
-  Fearless is needed to see that one does not know. That he is too<br>
+  <span class="semi-bold">I am Animal I meet in boredom.</span>
+  It is the desire of happiness left in its pure state. The process of life
+  & death is so fantastic, that I live like we never going to die, & i am
+  already.  How one should play in the now is a question for me, not
+  for the sea...  Fearless is needed, not the brave, not the coward.
+  Fearless is needed to see that one does not know. That he is too
   running in the nowhere... is it without the no?</p>
 <div class="btn-center center"><a href="#contact" class = "button bold"> BOOK UMIKO KOTORI</a>
 </div>
@@ -90,13 +95,13 @@
     Your browser does not support the audio element.
     </audio>
     <span class="bold song-name">Lazy Loosy Lady</span>
-    <div>
+    <div class="player-buttons">
       <button type="button" class="playButton"></button>
       <button type="button" class="pauseButton"></button>
       <div class="defaultBar">
-        <image src="../static/images/mask.png">
+        <image class="cleanbar"src="../static/images/mask.png">
         <div class="progressBar">
-          <image src="../static/images/fill.png">
+          <image class="filledbar"src="../static/images/fill.png">
         </div>
       </div>
       <button type="button" class="buybutton bold">BUY</button>
@@ -114,9 +119,9 @@
       <button type="button" class="playButton"></button>
       <button type="button" class="pauseButton"></button>
       <div class="defaultBar">
-        <image src="../static/images/mask.png">
+        <image class="cleanbar" src="../static/images/mask.png">
         <div class="progressBar">
-          <image src="../static/images/fill.png">
+          <image class="filledbar" src="../static/images/fill.png">
         </div>
       </div>
       <button type="button" class="buybutton bold">BUY</button>
@@ -135,9 +140,9 @@
       <button type="button" class="playButton"></button>
       <button type="button" class="pauseButton"></button>
       <div class="defaultBar">
-        <image src="../static/images/mask.png">
+        <image class="cleanbar" src="../static/images/mask.png">
         <div class="progressBar">
-          <image src="../static/images/fill.png">
+          <image class="filledbar" src="../static/images/fill.png">
         </div>
       </div>
       <button type="button" class="buybutton bold">BUY</button>

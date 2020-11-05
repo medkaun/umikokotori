@@ -97,10 +97,12 @@ p, a{
 
 a {
   text-decoration: none;
-  margin: 1%;
+  /* margin: 1%; */
+  margin: 1.02rem;
 }
 
-a:hover, .bg.video-btn:hover {
+a:hover,
+.video-btn:hover {
   color: var(--red);
   text-decoration: line-through;
 }
@@ -119,17 +121,19 @@ a:hover, .bg.video-btn:hover {
 }
 
 .navbar {
-  height: auto;
+  /* height: auto; */
   position: absolute;
   width: 100%;
-  padding: 2%;
+  padding: 1.7rem;
   background-color: black;
+  display: flex;
+  justify-content: space-around;
 }
 
-.navbar-left, .navbar-right {
+/* .navbar-left, .navbar-right {
   display: inline;
   margin: 12%;
-}
+} */
 
 .button-buy {
   border-radius: 25px;
@@ -152,8 +156,9 @@ a:hover, .bg.video-btn:hover {
   background-image: url("images/hand-left.png"), url("images/hand-right.png");
 }
 
-.about, .contact {
-  background-position: left 20%, right 50%;
+.about,
+.contact {
+  background-position: left 10%, right 13%;
   background-repeat: no-repeat;
   background-size: 20%;
 }
@@ -168,20 +173,30 @@ a:hover, .bg.video-btn:hover {
   line-height:120%;
 }
 
-.about-name, .contact-text, .video-name {
+.about-name,
+.contact-text,
+.video-name {
   font-size: 3rem;
 }
 
 /* reik kad wrapintusi evenly */
-.about-text {
+/* .about-text {
   padding-top: 5%;
+} */
+
+.about-text{
+  width:90%;
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
 }
 
-.button, .buybutton {
-  border-radius: 7px;
+.button,
+.buybutton {
+  border-radius: 11.9px;
   padding: 0.5rem 1.3rem 0.3rem 1.3rem;
   color: black;
-  font-size: 2.4rem;
+  font-size: 2.38rem;
 }
 
 .button {
@@ -195,7 +210,7 @@ a:hover, .bg.video-btn:hover {
 }
 
 .btn-center {
-  margin-top: 10%;
+  margin-top: 10.2rem;
 }
 
 .cover {
@@ -209,37 +224,44 @@ a:hover, .bg.video-btn:hover {
 
 .contact-icons {
   width: 30%;
-  margin: 5% 0 5% 35%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-icon {
-  margin: 7%;
+  margin: 2.55rem;
 }
 
 .contact-text {
-  margin-bottom: 7%;
+  margin-bottom: 3.4rem;
 }
 
 /* height reiks keist pagal picturz */
 .video-btn {
-  width: 45%;
-  height: 250px;
+  width: 42.5rem;
+  height: 25.5rem;
   margin: 2%;
-  display: inline-block;
-  vertical-align: top;
+  /* display: inline-block;
+  vertical-align: top; */
   border: none;
   outline: none;
+  background-color: black;
 }
 
 .video-container {
-  width: 80%;
-  margin-left: 10%;
+  /* width: 80%;
+  margin-left: 10%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .filler {
   background-image: url("images/bird.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-color: white;
 }
 
 /* .two-lines {
@@ -253,7 +275,7 @@ video {
 }
 
 .home-name {
-  font-size: 8.1rem;
+  font-size: 3rem;
   z-index: 10;
   position: relative;
   margin-top: -15%;
@@ -262,13 +284,15 @@ video {
 .home-logo {
   width: 30%;
   z-index: 15;
-  margin-left: 35%;
-  margin-top: 15%;
+  display: block;
+  margin: auto;
+  padding-top: 15%;
 }
 
 .scroll-down {
-  margin-left: 49%;
-  margin-top: 19%;
+  margin: auto;
+  display: block;
+  margin-top: 8rem;
 }
 
 .modal-bg {
@@ -289,27 +313,33 @@ video {
   font-size: 3.4rem;
   color: var(--red);
   left: 7%;
-  top: 7%;
+  top: 18%;
 }
 
 .video-frame {
   position: absolute;
   margin-left: 10%;
-  margin-top: 7%;
+  margin-top: 27%;
   width: 80%;
-  height: 80%
+  height: 40%
 }
 
-.bg.video-btn:hover, .close:hover, .playButton:hover, .pauseButton:hover,
-.buybutton:hover, #scrolltotop:hover {
+.video-btn:hover,
+.close:hover,
+.playButton:hover,
+.pauseButton:hover,
+.buybutton:hover,
+#scrolltotop:hover {
   cursor: pointer;
 }
 
 /* audio player */
 
 nav {
-  width: 70%;
-  margin-left: 15%;
+  width: 413px;
+  /* margin-left: 15%; */
+  display: block;
+  margin: auto;
 }
 
 .defaultBar {
@@ -320,17 +350,28 @@ nav {
 
 .progressBar {
   z-index: -1;
-  margin-top: -57px;
+  margin-top: -33px;
   position: absolute;
   overflow: hidden;
   width: 0px;
 }
 
+/* .player-buttons {
+  display: block;
+  margin: auto;
+} */
+
+.cleanbar,
+.filledbar {
+  height: 27px;
+  width: auto;
+}
+
 .playButton, .pauseButton {
   background-color: inherit;
   border: none;
-  height: 50px;
-  width: 50px;
+  height: 27px;
+  width: 27px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -358,11 +399,12 @@ nav {
 }
 
 .buybutton {
-  border: 2.9px solid black;
+  border: 1.9px solid black;
   position: absolute;
   background-color: inherit;
-  margin-left: 520px;
-  margin-top: 5px;
+  margin-left: 275px;
+  margin-top: 4px;
+  font-size: 1.2rem;
 }
 
 .buybutton:hover {
@@ -375,8 +417,8 @@ nav {
 }
 
 .song-name {
-  margin-left: 135px;
-  font-size: 2.5rem;
+  margin-left: 90px;
+  font-size: 1.8rem;
 }
 
 #song-container {
@@ -397,4 +439,235 @@ nav {
 #scrolltotop.active {
   pointer-events: auto;
   opacity: 1;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 800px) {
+  .home-name {
+    font-size: 4rem;
+  }
+
+  .scroll-down {
+    margin-top: 12rem;
+  }
+
+  .video-frame {
+    height: 60%;
+    margin-top: 17%;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 900px) {
+  .home-name {
+    font-size: 5rem;
+  }
+
+  .scroll-down {
+    margin-top: 16rem;
+  }
+
+  .video-frame {
+    height: 70%;
+    margin-top: 17%;
+  }
+
+  nav {
+    width: 750px;
+  }
+
+  .playButton, .pauseButton {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cleanbar,
+  .filledbar {
+    height: 50px;
+    width: auto;
+  }
+
+  .progressBar {
+    margin-top: -56px;
+  }
+
+  .buybutton {
+    border: 2.9px solid black;
+    margin-left: 520px;
+    margin-top: 5px;
+    font-size: 2.38rem;
+  }
+
+  .song-name {
+    margin-left: 135px;
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1007px) {
+  .home-name {
+    font-size: 5.7rem;
+  }
+
+  .scroll-down {
+    margin-top: 16rem;
+  }
+
+  .video-frame {
+    height: 70%;
+    margin-top: 10%;
+  }
+
+  .close {
+    top: 10%;
+  }
+
+  nav {
+    width: 750px;
+  }
+
+  .playButton, .pauseButton {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cleanbar,
+  .filledbar {
+    height: 50px;
+    width: auto;
+  }
+
+  .progressBar {
+    margin-top: -56px;
+  }
+
+  .buybutton {
+    border: 2.9px solid black;
+    margin-left: 520px;
+    margin-top: 5px;
+    font-size: 2.38rem;
+  }
+
+  .song-name {
+    margin-left: 135px;
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1008px) and (max-width: 1200px) {
+  /* For large screens: */
+  .home-name {
+    font-size: 6.5rem;
+  }
+
+  .scroll-down {
+    margin-top: 21rem;
+  }
+
+  .about,
+  .contact {
+    background-position: left 20%, right 40%;
+  }
+
+  .about-text{
+    width:50%;
+  }
+
+  nav {
+    width: 750px;
+  }
+
+  .playButton, .pauseButton {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cleanbar,
+  .filledbar {
+    height: 50px;
+    width: auto;
+  }
+
+  .progressBar {
+    margin-top: -56px;
+  }
+
+  .buybutton {
+    border: 2.9px solid black;
+    margin-left: 520px;
+    margin-top: 5px;
+    font-size: 2.38rem;
+  }
+
+  .song-name {
+    margin-left: 135px;
+    font-size: 2.5rem;
+  }
+
+  .video-frame {
+    height: 80%;
+    margin-top: 7%;
+  }
+
+  .close {
+    top: 7%;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+   /* For large screens: */
+.home-name {
+  font-size: 7.5rem;
+}
+
+.scroll-down {
+  margin-top: 27rem;
+}
+
+.about,
+.contact {
+  background-position: left 20%, right 40%;
+}
+
+.about-text{
+  width:50%;
+}
+
+nav {
+  width: 750px;
+}
+
+.playButton, .pauseButton {
+  width: 50px;
+  height: 50px;
+}
+
+.cleanbar,
+.filledbar {
+  height: 50px;
+  width: auto;
+}
+
+.progressBar {
+  margin-top: -56px;
+}
+
+.buybutton {
+  border: 2.9px solid black;
+  margin-left: 520px;
+  margin-top: 5px;
+  font-size: 2.38rem;
+}
+
+.song-name {
+  margin-left: 135px;
+  font-size: 2.5rem;
+}
+
+.video-frame {
+  height: 80%;
+  margin-top: 7%;
+}
+
+.close {
+  top: 7%;
+}
 }

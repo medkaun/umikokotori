@@ -22,17 +22,17 @@
       <a id="scrolltotop"><img src="../static/images/homebtn.png"></a>
 
       <div id = "navbar" class = "navbar">
-        <div class = "navbar-left">
+        <div>
           <a href="#videos">SEE</a>
           <a href="#song-container">LISTEN</a>
           <a href="/umiko">UMIKO</a>
           <a href="/kotori">KOTORI</a>
         </div>
-        <div class = "navbar-right">
+        <div>
           <a href="#contact">LET'S TALK</a>
           <a class="button-buy" href="/">BUY SOUNDS</a>
-          <a href="/lt">LT</a>
-          <a href="/en">EN</a>
+          {% block lang %}
+          {% endblock %}
         </div>
         </div>
 

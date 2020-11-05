@@ -8,13 +8,25 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 def index():
     return render_template("umikokotorien.html")
 
-@app.route("/umiko")
+@app.route("/lt")
+def indexlt():
+    return render_template("umikokotorilt.html")
+
+@app.route("/umiko/en")
 def umikoen():
     return render_template("umikoen.html")
 
-@app.route("/kotori")
+@app.route("/umiko/lt")
+def umikolt():
+    return render_template("umikolt.html")
+
+@app.route("/kotori/en")
 def kotorien():
     return render_template("kotorien.html")
+
+@app.route("/kotori/lt")
+def kotorilt():
+    return render_template("kotorilt.html")
 
 if __name__ == "__main__":
     app.run(app, debug=True)
