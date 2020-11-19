@@ -4,12 +4,18 @@
     Umiko Kotori
 {% endblock %}
 
+{% block uk %}
+<a href="/umiko/lt">UMIKO</a>
+<a href="/kotori/lt">KOTORI</a>
+{% endblock %}
+
 {% block lang %}
 <a href="/lt">LT</a>
 <a href="/">EN</a>
 {% endblock %}
 
-{% block home %}
+{% block main %}
+<div class="home">
   <video poster="../static/images/video-poster.png"
   id="bgvid" playsinline autoplay loop>
     <!-- <source src="../static/video/TEST.mp4" type="video/mp4">
@@ -18,136 +24,307 @@
   <img class="home-logo" src="../static/images/logo.png">
   <p class="center home-name">IN THE NOWHERE WITHOUT THE NO</p>
   <img class="scroll-down" src="../static/images/scroll-down.png">
-{% endblock %}
+</div>
 
-{% block video %}
+<section id="videos" class = "bg bgwhite">
 <div class = "video-container">
-  <button class = "bg video-btn" id="video-btn" data-toggle="modal"
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
   data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
     <p class = "center video-name">LAZY<br>LOOSY<br>LADY</p>
   </button>
-  <button class = "bg video-btn" id="video-btn" data-toggle="modal"
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
   data-src="https://www.youtube.com/embed/sSqOZxR-HI4" data-target="#video-modal">
     <p class = "center video-name two-lines">BORN &<br>DYING</p>
   </button>
-  <button class = "bg video-btn" id="video-btn" data-toggle="modal"
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
   data-src="https://www.youtube.com/embed/YgSPaXgAdzE" data-target="#video-modal">
     <p class = "center video-name two-lines">SOAK &<br>SMOKE</p>
   </button>
-  <button class = "bg video-btn" id="video-btn" data-toggle="modal"
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
   data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
     <p class = "center video-name two-lines">IN<br>POCKET</p>
   </button>
-  <button class = "bg video-btn" id="video-btn" data-toggle="modal"
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
   data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
     <p class = "center video-name">MR.<br>FANTAS-<br>TIQUE</p>
   </button>
   <div class = "video-btn filler"></div>
 </div>
-{% endblock %}
+</section>
 
-{% block about %}
+<div class = "bg about">
 <img class = "about-logo" src="../static/images/logo.png">
 <p class="about-name semi-bold center">IN THE<br>
   NOWHERE<br>
   WITHOUT<br>
   THE NO</p>
 <p class = "about-text center">
+  Sea child with a small bird heart.<br>
+  In Eternal play on the shore.<br><br>
   Audio visual album<br><br>
-  <span class="semi-bold">I am running like animal with a memory.<br>
-  But no memories.<br>
-  In the nowhere without the no.</span><br><br>
-  While man always has the world before him - always only stands<br>
-  "facing opposite" & never enters "pure space" of the outside - the<br>
-  animal instead moves in the open "in a nowhere without the no"<br><br>
-  This album is about desire to expand inner nature, who is dancing<br>
-  as life itself. About animality of the inside, the instinct, the feel of<br>
-  what comes from within. About the company of two wolfs  who i<br>
-  teach to howl harmonically on my own funeral. About holding the<br>
-  mirror & trying to see who are you not, trying to grasp, <span class="semi-bold">how much<br>
-  of the man in the monkey there are</span>. But you excluded your self<br>
-  from the nature to recognize your self, and became a <span class="semi-bold">"Resembling<br>
-  man"</span> who must recognize him self in a non man in order to be a<br>
-  human. Homo as the animal it is only if it recognizes that it is not.<br>
-  Homo is constitutively nonhuman, he can receive all natures and<br>
-  all faces<br><br>
-  <span class="semi-bold">I am Animal I meet in boredom.</span><br>
-  It is the desire of happiness left in its pure state. The process of life<br>
-  & death is so fantastic, that I live like we never going to die, & i am<br>
-  already.  How one should play in the now is a question for me, not<br>
-  for the sea...  Fearless is needed, not the brave, not the coward.<br>
-  Fearless is needed to see that one does not know. That he is too<br>
-  running in the nowhere... is it without the no?</p>
+  I am Animal I meet in boredom.<br>
+  It is the desire of happiness left in its pure state.<br>
+  The process of life and death is so fantastic,  I live like never going to die,
+  and i am already.<br><br>
+  While man always has the world before him – always only stands “facing opposite”
+  and never enters “pure space” of the outside – the animal instead moves in the
+  open “in a nowhere without the no”<br>
+  This album is about desire to expand inner nature, who is dancing as life it self.<br>
+  About animality of the inside, the instinct, the feel of what comes from within.<br>
+  About the company of two wolfs  who i teach to howl harmonically on my own funeral.<br>
+  About holding the mirror and trying to see who are you not, trying to grasp, how much
+  of the man in the monkey there are.<br><br>
 <div class="btn-center center"><a href="#contact" class = "button bold"> BOOK UMIKO KOTORI</a>
 </div>
-{% endblock %}
+</div>
 
-{% block music %}
-<img src="../static/images/cover.png" class="cover">
+<div class = "bg bgmint">
+<img src="../static/images/ukcover.png" class="cover">
 
 <!-- PLEJERIS -->
 <div id="song-container">
 
   <nav>
     <audio class="track">
-      <source src="../static/audio/lazyloosylady.ogg" type="audio/ogg" />
-      <source src="../static/audio/lazyloosylady.mp3" type="audio/mpeg" />
+      <source src="../static/audio/inthenowhere/beatingselfwithi.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/beatingselfwithi.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
     </audio>
-    <span class="bold song-name">Lazy Loosy Lady</span>
+    <span class="bold song-name" id="black">Beating Self With I</span>
     <div>
-      <button type="button" class="playButton"></button>
-      <button type="button" class="pauseButton"></button>
+      <button type="button" class="playButton" id="homeplay"></button>
+      <button type="button" class="pauseButton" id="homepause"></button>
       <div class="defaultBar">
-        <image src="../static/images/mask.png">
+        <image class="cleanbar" src="../static/images/mask2.png">
         <div class="progressBar">
-          <image src="../static/images/fill.png">
+          <image class="filledbar" src="../static/images/fill.png">
         </div>
       </div>
-      <button type="button" class="buybutton bold">BUY</button>
+      <button type="button" class="buytrack-button bold" id="btnblack">BUY</button>
     </div>
   </nav>
 
   <nav>
     <audio class="track">
-      <source src="../static/audio/beatingselfwithi.ogg" type="audio/ogg" />
-      <source src="../static/audio/beatingselfwithi.mp3" type="audio/mpeg" />
+      <source src="../static/audio/inthenowhere/lazyloosylady.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/lazyloosylady.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
     </audio>
-    <span class="bold song-name">Beating Self With I</span>
-    <div>
-      <button type="button" class="playButton"></button>
-      <button type="button" class="pauseButton"></button>
+    <span class="bold song-name" id="black">Lazy Loosy Lady</span>
+    <div class="player-buttons">
+      <button type="button" class="playButton" id="homeplay"></button>
+      <button type="button" class="pauseButton" id="homepause"></button>
       <div class="defaultBar">
-        <image src="../static/images/mask.png">
+        <image class="cleanbar" src="../static/images/mask2.png">
         <div class="progressBar">
-          <image src="../static/images/fill.png">
+          <image class="filledbar"src="../static/images/fill.png">
         </div>
       </div>
-      <button type="button" class="buybutton bold">BUY</button>
+      <button type="button" class="buytrack-button bold" id="btnblack">BUY</button>
     </div>
   </nav>
 
 
   <nav>
     <audio class="track">
-      <source src="../static/audio/bornanddying.ogg" type="audio/ogg" />
-      <source src="../static/audio/bornanddying.mp3" type="audio/mpeg" />
+      <source src="../static/audio/inthenowhere/bornanddying.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/bornanddying.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
     </audio>
-    <span class="bold song-name">Born and Dying</span>
+    <span class="bold song-name" id="black">Born and Dying</span>
     <div>
-      <button type="button" class="playButton"></button>
-      <button type="button" class="pauseButton"></button>
+      <button type="button" class="playButton" id="homeplay"></button>
+      <button type="button" class="pauseButton" id="homepause"></button>
       <div class="defaultBar">
-        <image src="../static/images/mask.png">
+        <image class="cleanbar" src="../static/images/mask2.png">
         <div class="progressBar">
-          <image src="../static/images/fill.png">
+          <image class="filledbar" src="../static/images/fill.png">
         </div>
       </div>
-      <button type="button" class="buybutton bold">BUY</button>
+      <button type="button" class="buytrack-button bold" id="btnblack">BUY</button>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/inthenowhere/earlyman.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/earlyman.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name" id="black">Early Man</span>
+    <div>
+      <button type="button" class="playButton" id="homeplay"></button>
+      <button type="button" class="pauseButton" id="homepause"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask2.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <button type="button" class="buytrack-button bold" id="btnblack">BUY</button>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/inthenowhere/hommie.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/hommie.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name" id="black">Hommie</span>
+    <div>
+      <button type="button" class="playButton" id="homeplay"></button>
+      <button type="button" class="pauseButton" id="homepause"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask2.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <button type="button" class="buytrack-button bold" id="btnblack">BUY</button>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/inthenowhere/mrfantastique.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/mrfantastique.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name" id="black">Mr. Fantastique</span>
+    <div>
+      <button type="button" class="playButton" id="homeplay"></button>
+      <button type="button" class="pauseButton" id="homepause"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask2.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <button type="button" class="buytrack-button bold" id="btnblack">BUY</button>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/inthenowhere/opportunitystrive.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/opportunitystrive.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name" id="black">Opportunity Strive</span>
+    <div>
+      <button type="button" class="playButton" id="homeplay"></button>
+      <button type="button" class="pauseButton" id="homepause"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask2.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <button type="button" class="buytrack-button bold" id="btnblack">BUY</button>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/inthenowhere/inthepocket.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/inthepocket.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name" id="black">In the Pocket</span>
+    <div>
+      <button type="button" class="playButton" id="homeplay"></button>
+      <button type="button" class="pauseButton" id="homepause"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask2.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <button type="button" class="buytrack-button bold" id="btnblack">BUY</button>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/inthenowhere/inevitable.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/inevitable.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name" id="black">Inevitable</span>
+    <div>
+      <button type="button" class="playButton" id="homeplay"></button>
+      <button type="button" class="pauseButton" id="homepause"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask2.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <button type="button" class="buytrack-button bold" id="btnblack">BUY</button>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/inthenowhere/soakandsmoke.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/soakandsmoke.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name" id="black">Soak and Smoke</span>
+    <div>
+      <button type="button" class="playButton" id="homeplay"></button>
+      <button type="button" class="pauseButton" id="homepause"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask2.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <button type="button" class="buytrack-button bold" id="btnblack">BUY</button>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/inthenowhere/holeinthebag.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/holeinthebag.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name" id="black">Hole in the Bag <span class="subtext">(created with Daujotas)</span></span>
+    <div>
+      <button type="button" class="playButton" id="homeplay"></button>
+      <button type="button" class="pauseButton" id="homepause"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask2.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <button type="button" class="buytrack-button bold" id="btnblack">BUY</button>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/inthenowhere/visatatu.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/visatatu.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name" id="black">Visata tu</span>
+    <div>
+      <button type="button" class="playButton" id="homeplay"></button>
+      <button type="button" class="pauseButton" id="homepause"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask2.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <button type="button" class="buytrack-button bold" id="btnblack">BUY</button>
     </div>
   </nav>
 
 </div><!-- / player -->
+</div>
 {% endblock %}

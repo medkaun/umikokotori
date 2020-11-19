@@ -38,7 +38,17 @@ var tracks = document.getElementsByClassName("track");
 var playButton = document.getElementsByClassName("playButton");
 var pauseButton = document.getElementsByClassName("pauseButton");
 
-var barSize = 493;
+// var defaultBar = document.getElementsByClassName("cleanbar");
+var barSize;
+// const x = window.matchMedia("(max-width: 800px)");
+
+// function setBarSize(x) {
+//   if (x.matches) { // If media query matches
+//     barSize=256;
+//   } else {
+//    barSize=474;
+//   }
+// }
 
 for (var i = 0 ; i < playButton.length; i++){
   playButton[i].addEventListener('click', playTrack);
@@ -61,6 +71,8 @@ function playTrack(event) {
   var nav = ((event.target).parentNode).parentNode;
   var track = nav.getElementsByClassName("track");
   var bar = nav.getElementsByClassName("progressBar");
+  barSize = nav.getElementsByClassName("cleanbar")[0].offsetWidth;
+  console.log(barSize);
   track[0].play();
   setInterval(function() {update(track[0], bar[0])}, 500);
 }
@@ -84,17 +96,34 @@ function update(track, bar) {
 
 //scroll to top
 
-const btnScrollToTop = document.getElementById("scrolltotop");
+const btnHome = document.getElementById("home-nav");
 
 window.addEventListener("scroll", function() {
   if (window.pageYOffset > 100) {
-    btnScrollToTop.classList.add("active");
+    btnHome.classList.add("active");
   }
   else {
-    btnScrollToTop.classList.remove("active");
+    btnHome.classList.remove("active");
   }
 })
 
-btnScrollToTop.addEventListener("click", function() {
-  $("html, body").animate({ scrollTop: 0}, "slow");
-})
+
+const drop = document.getElementById("dropbtn");
+const navbar = document.getElementById("navbar");
+const menuItems = navbar.getElementsByTagName("a");
+
+function toggle() {
+     if (drop.getAttribute("aria-expanded") === "false") {
+         drop.setAttribute("aria-expanded", "true");
+     }
+     else {
+       drop.setAttribute("aria-expanded", "false");
+     }
+}
+drop.addEventListener("click", toggle)
+
+for (var i = 0 ; i < menuItems.length; i++){
+  menuItems[i].addEventListener("click", function() {
+    drop.setAttribute("aria-expanded", "false");
+  });
+}

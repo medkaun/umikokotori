@@ -4,19 +4,684 @@
     Kotori
 {% endblock %}
 
+{% block uk %}
+<a href="/umiko/en">UMIKO</a>
+<a href="/kotori/en">KOTORI</a>
+{% endblock %}
+
 {% block lang %}
 <a href="/kotori/lt">LT</a>
 <a href="/kotori/en">EN</a>
 {% endblock %}
 
-{% block home %}
-{% endblock %}
+{% block main %}
+<img src="../static/images/cagecover.jpg" class="cover">
 
-{% block video %}
-{% endblock %}
+<section id="videos" class = "bg">
+<div class = "video-container">
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
+  data-src="https://www.youtube.com/embed/jU1RWFxG3UQ" data-target="#video-modal">
+    <p class = "center video-name">FOR A<br>LIVING</p>
+  </button>
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
+  data-src="https://www.youtube.com/embed/MVymoRwF8PI" data-target="#video-modal">
+    <p class = "center video-name two-lines">LAYED<br>DENY</p>
+  </button>
+</div>
+</section>
 
-{% block about %}
-{% endblock %}
+<div class = "bg">
+  <p class="about-name semi-bold center">KOTORI<br>CAGE<br>2017</p>
+  <p class = "about-text center">
+    Behind every bright and free soul is a dark cage with broken doors.<br><br>
+    Solo act.<br>
+    The Bass. The Amp. The Voice. The Groove.<br>
+    The birth of the little bird.</p>
+</div>
 
-{% block music %}
+<div class = "bg">
+  <!-- PLEJERIS -->
+  <div id="song-container">
+
+    <nav>
+      <audio class="track">
+        <source src="../static/audio/kotori/cage/1.DEVOTION.ogg" type="audio/ogg" />
+        <source src="../static/audio/kotori/cage/1.DEVOTION.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+      </audio>
+      <span class="bold song-name">Devotion</span>
+      <div>
+        <button type="button" class="playButton"></button>
+        <button type="button" class="pauseButton"></button>
+        <div class="defaultBar">
+          <image class="cleanbar" src="../static/images/mask.png">
+          <div class="progressBar">
+            <image class="filledbar" src="../static/images/fill.png">
+          </div>
+        </div>
+        <a href="https://umikomusic.bandcamp.com/track/devotion" target="_blank"
+        class="buytrack-button bold">BUY</a>
+      </div>
+    </nav>
+
+    <nav>
+      <audio class="track">
+        <source src="../static/audio/kotori/cage/2.IM_IN_YOUR_MIND.ogg" type="audio/ogg" />
+        <source src="../static/audio/kotori/cage/2.IM_IN_YOUR_MIND.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+      </audio>
+      <span class="bold song-name">Im in Your Mind</span>
+      <div class="player-buttons">
+        <button type="button" class="playButton"></button>
+        <button type="button" class="pauseButton"></button>
+        <div class="defaultBar">
+          <image class="cleanbar"src="../static/images/mask.png">
+          <div class="progressBar">
+            <image class="filledbar"src="../static/images/fill.png">
+          </div>
+        </div>
+        <a href="https://umikomusic.bandcamp.com/track/im-in-your-mind" target="_blank"
+        class="buytrack-button bold">BUY</a>
+      </div>
+    </nav>
+
+
+    <nav>
+      <audio class="track">
+        <source src="../static/audio/kotori/cage/3.MESSY_MERCY.ogg" type="audio/ogg" />
+        <source src="../static/audio/kotori/cage/3.MESSY_MERCY.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+      </audio>
+      <span class="bold song-name">Messy Mercy</span>
+      <div>
+        <button type="button" class="playButton"></button>
+        <button type="button" class="pauseButton"></button>
+        <div class="defaultBar">
+          <image class="cleanbar" src="../static/images/mask.png">
+          <div class="progressBar">
+            <image class="filledbar" src="../static/images/fill.png">
+          </div>
+        </div>
+        <a href="https://umikomusic.bandcamp.com/track/messy-mercy" target="_blank"
+        class="buytrack-button bold">BUY</a>
+      </div>
+    </nav>
+
+    <nav>
+      <audio class="track">
+        <source src="../static/audio/kotori/cage/4.FOR_A_LIVING.ogg" type="audio/ogg" />
+        <source src="../static/audio/kotori/cage/4.FOR_A_LIVING.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+      </audio>
+      <span class="bold song-name">For a Living</span>
+      <div>
+        <button type="button" class="playButton"></button>
+        <button type="button" class="pauseButton"></button>
+        <div class="defaultBar">
+          <image class="cleanbar" src="../static/images/mask.png">
+          <div class="progressBar">
+            <image class="filledbar" src="../static/images/fill.png">
+          </div>
+        </div>
+        <a href="https://umikomusic.bandcamp.com/track/for-a-living" target="_blank"
+        class="buytrack-button bold">BUY</a>
+      </div>
+    </nav>
+
+    <nav>
+      <audio class="track">
+        <source src="../static/audio/kotori/cage/5.RAIZOR.ogg" type="audio/ogg" />
+        <source src="../static/audio/kotori/cage/5.RAIZOR.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+      </audio>
+      <span class="bold song-name">Raizor</span>
+      <div>
+        <button type="button" class="playButton"></button>
+        <button type="button" class="pauseButton"></button>
+        <div class="defaultBar">
+          <image class="cleanbar" src="../static/images/mask.png">
+          <div class="progressBar">
+            <image class="filledbar" src="../static/images/fill.png">
+          </div>
+        </div>
+        <a href="https://umikomusic.bandcamp.com/track/raizor" target="_blank"
+        class="buytrack-button bold">BUY</a>
+      </div>
+    </nav>
+
+    <nav>
+      <audio class="track">
+        <source src="../static/audio/kotori/cage/6.NO_ONE_ELSE.ogg" type="audio/ogg" />
+        <source src="../static/audio/kotori/cage/6.NO_ONE_ELSE.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+      </audio>
+      <span class="bold song-name">No One Else</span>
+      <div>
+        <button type="button" class="playButton"></button>
+        <button type="button" class="pauseButton"></button>
+        <div class="defaultBar">
+          <image class="cleanbar" src="../static/images/mask.png">
+          <div class="progressBar">
+            <image class="filledbar" src="../static/images/fill.png">
+          </div>
+        </div>
+        <a href="https://umikomusic.bandcamp.com/track/no-one-else" target="_blank"
+        class="buytrack-button bold">BUY</a>
+      </div>
+    </nav>
+
+    <nav>
+      <audio class="track">
+        <source src="../static/audio/kotori/cage/7.MINUS_25.ogg" type="audio/ogg" />
+        <source src="../static/audio/kotori/cage/7.MINUS_25.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+      </audio>
+      <span class="bold song-name">Minus 25</span>
+      <div>
+        <button type="button" class="playButton"></button>
+        <button type="button" class="pauseButton"></button>
+        <div class="defaultBar">
+          <image class="cleanbar" src="../static/images/mask.png">
+          <div class="progressBar">
+            <image class="filledbar" src="../static/images/fill.png">
+          </div>
+        </div>
+        <a href="https://umikomusic.bandcamp.com/track/minus-25" target="_blank"
+        class="buytrack-button bold">BUY</a>
+      </div>
+    </nav>
+
+    <nav>
+      <audio class="track">
+        <source src="../static/audio/kotori/cage/8.LAYED_DENY.ogg" type="audio/ogg" />
+        <source src="../static/audio/kotori/cage/8.LAYED_DENY.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+      </audio>
+      <span class="bold song-name">Layed Deny</span>
+      <div>
+        <button type="button" class="playButton"></button>
+        <button type="button" class="pauseButton"></button>
+        <div class="defaultBar">
+          <image class="cleanbar" src="../static/images/mask.png">
+          <div class="progressBar">
+            <image class="filledbar" src="../static/images/fill.png">
+          </div>
+        </div>
+        <a href="https://umikomusic.bandcamp.com/track/layed-deny" target="_blank"
+        class="buytrack-button bold">BUY</a>
+      </div>
+    </nav>
+
+    <nav>
+      <audio class="track">
+        <source src="../static/audio/kotori/cage/9.RUMBLE.ogg" type="audio/ogg" />
+        <source src="../static/audio/kotori/cage/9.RUMBLE.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+      </audio>
+      <span class="bold song-name">Rumble</span>
+      <div>
+        <button type="button" class="playButton"></button>
+        <button type="button" class="pauseButton"></button>
+        <div class="defaultBar">
+          <image class="cleanbar" src="../static/images/mask.png">
+          <div class="progressBar">
+            <image class="filledbar" src="../static/images/fill.png">
+          </div>
+        </div>
+        <a href="https://umikomusic.bandcamp.com/track/rumble" target="_blank"
+        class="buytrack-button bold">BUY</a>
+      </div>
+    </nav>
+
+  </div>
+</div>
+
+<img src="../static/images/freefromconcerncover.jpg" class="cover">
+
+<section id="videos" class = "bg">
+<div class = "video-container">
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
+  data-src="https://www.youtube.com/embed/Hu5edyt7I2I" data-target="#video-modal">
+    <p class = "center video-name">WORNED<br>OUT</p>
+  </button>
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
+  data-src="https://www.youtube.com/embed/3L6oF9sdpg0" data-target="#video-modal">
+    <p class = "center video-name two-lines">909</p>
+  </button>
+</div>
+</section>
+
+<div class = "bg">
+  <p class="about-name semi-bold center">KOTORI<br>FREE FROM CONCERN<br>2018</p>
+  <p class = "about-text center">Life is a dream.<br>
+    Free from concern.<br>
+    Of explaining my self.</p>
+</div>
+
+<div class = "bg">
+<!-- PLEJERIS -->
+<div id="song-container">
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/freefromconcern/1.hard.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/freefromconcern/1.hard.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Hard</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/freefromconcern/2.different_eyes.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/freefromconcern/2.different_eyes.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Different Eyes</span>
+    <div class="player-buttons">
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar"src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar"src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/freefromconcern/3.star.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/freefromconcern/3.star.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Star</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/freefromconcern/4.worned_out.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/freefromconcern/4.worned_out.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Worned Out</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/freefromconcern/5.909.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/freefromconcern/5.909.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">909</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/freefromconcern/6.river.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/freefromconcern/6.river.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">River</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/freefromconcern/7.yes.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/freefromconcern/7.yes.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Yes</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/freefromconcern/8.together.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/freefromconcern/8.together.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Together</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+</div><!-- / player -->
+</div>
+
+<img src="../static/images/autumncover.jpg" class="cover">
+
+<div class = "bg">
+  <p class="about-name semi-bold center">KOTORI<br>AUTUMN IS ROTTEN<br>2018</p>
+  <p class = "about-text center">Such trashy is lovely.<br>
+    The lonely and the lost.<br>
+    Spilling and letting to flow.<br>
+    Pease rotten and reward me with blossoms.<br>
+    Together we are siping life.</p>
+</div>
+
+<div class = "bg">
+<!-- PLEJERIS -->
+<div id="song-container">
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/autumn/1.AUTUMN_IS_ROTTEN.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/autumn/1.AUTUMN_IS_ROTTEN.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Autumn is Rotten</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/autumn/2.AGE.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/autumn/2.AGE.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Age</span>
+    <div class="player-buttons">
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar"src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar"src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/autumn/3.ENDLESS.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/autumn/3.ENDLESS.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Endless</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/autumn/4.DOORS.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/autumn/4.DOORS.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Doors</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/autumn/5.TOUCH.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/autumn/5.TOUCH.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Touch</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+</div><!-- / player -->
+</div>
+
+<img src="../static/images/mommyskarmacover.jpg" class="cover">
+
+<div class = "bg">
+  <p class="about-name semi-bold center">KOTORI and CHUNG KRAN<br>
+    MOMMYS KARMA AND THE NIGHT SAVINGS<br>2018</p>
+  <p class = "about-text center">
+    The music was created together with Mantas Augustaitis (Chung Kran)<br>
+    It is the movie.<br>
+    We made together.<br>
+    Fully in the dream, with all the bright intensions.<br>
+    It is a strive of a gentle heart even in the hardest times prevailing peace.</p>
+</div>
+
+<div class = "bg">
+<!-- PLEJERIS -->
+<div id="song-container">
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/mommyskarma/LOAD_ONES.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/mommyskarma/LOAD_ONES.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Load Ones</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="https://tiltonamai.bandcamp.com/track/load-ones" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/mommyskarma/DAY_DREAM.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/mommyskarma/DAY_DREAM.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Day Dream</span>
+    <div class="player-buttons">
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar"src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar"src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="https://tiltonamai.bandcamp.com/track/day-dream" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/mommyskarma/DOWN_EYED.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/mommyskarma/DOWN_EYED.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Down Eyed</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="https://tiltonamai.bandcamp.com/track/down-eyed" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/mommyskarma/NO_USE.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/mommyskarma/NO_USE.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">No Use</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="https://tiltonamai.bandcamp.com/track/no-use" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+  <nav>
+    <audio class="track">
+      <source src="../static/audio/kotori/mommyskarma/FOOLING.ogg" type="audio/ogg" />
+      <source src="../static/audio/kotori/mommyskarma/FOOLING.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+    <span class="bold song-name">Fooling</span>
+    <div>
+      <button type="button" class="playButton"></button>
+      <button type="button" class="pauseButton"></button>
+      <div class="defaultBar">
+        <image class="cleanbar" src="../static/images/mask.png">
+        <div class="progressBar">
+          <image class="filledbar" src="../static/images/fill.png">
+        </div>
+      </div>
+      <a href="https://tiltonamai.bandcamp.com/track/fooling" target="_blank"
+      class="buytrack-button bold">BUY</a>
+    </div>
+  </nav>
+
+</div><!-- / player -->
+</div>
+
 {% endblock %}
