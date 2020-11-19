@@ -347,7 +347,7 @@ video {
   margin: auto;
   display: block;
   margin-top: 8rem;
-  /* animation: appear 3s linear 15s forwards; */
+  margin-bottom: 1rem;
 }
 
 .modal-bg {
