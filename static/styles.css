@@ -213,8 +213,8 @@ a:hover,
   margin-top: 3rem;
 }
 
-.button,
-.buytrack-button {
+/* .buytrack-button, */
+.button {
   border-radius: 11.9px;
   padding: 0.5rem 1.3rem 0.3rem 1.3rem;
   color: black;
@@ -224,6 +224,7 @@ a:hover,
 .button {
   border: 1.5px solid var(--red);
   background-color: var(--red);
+  font-size: 1rem;
 }
 
 .button:hover{
@@ -232,7 +233,7 @@ a:hover,
 }
 
 .btn-center {
-  margin-top: 10.2rem;
+  margin-top: 3.2rem;
 }
 
 .cover {
@@ -249,6 +250,21 @@ a:hover,
   margin: auto;
   display: flex;
   justify-content: center;
+  margin-bottom: 2.4rem;
+  margin-top: -2rem;
+}
+
+.ig {
+  height: 45px;
+}
+
+.yt {
+  height: 40px;
+}
+
+.fb {
+  height: 50px;
+  margin-top: -0.5rem;
 }
 
 .contact-icon {
@@ -256,7 +272,7 @@ a:hover,
 }
 
 .contact-text {
-  margin-bottom: 3.4rem;
+  margin-bottom: 2.4rem;
 }
 
 .sponsor-logos {
@@ -307,11 +323,12 @@ video {
   position: absolute;
   width: 100%;
   z-index: -100;
+  margin-top: -15rem;
 }
 
-/* .home {
-  height: 265px;
-} */
+.home {
+  padding-top: 10rem;
+}
 
 /* @keyframes appear {
   from {opacity: 0;}
@@ -342,12 +359,30 @@ video {
   /* animation: appear 3s linear 0s 2 alternate forwards, grow 6s linear 0s; */
 }
 
+@keyframes move {
+  from {padding: 0;}
+  /* padding-bottom: 1;} */
+  to {padding: 1rem;}
+  /* padding-bottom: 0.5rem;} */
+}
+
 .scroll-down {
   /* opacity: 0; */
   margin: auto;
   display: block;
   margin-top: 8rem;
   margin-bottom: 1rem;
+  width: 100%;
+  height: 60px;
+  overflow-y: visible;
+  /* animation: move 1s linear 0s infinite alternate; */
+}
+
+.scroll-down-img {
+  margin: auto;
+  display: block;
+  /* padding: 0; */
+  animation: move 1s linear 0s infinite alternate;
 }
 
 .modal-bg {
@@ -391,21 +426,22 @@ video {
 /* audio player */
 
 nav {
-  width: 413px;
+  width: 313px;
   /* margin-left: 15%; */
   display: block;
   margin: auto;
+  margin-top: 2rem;
 }
 
 .defaultBar {
-  position: absolute;
-  display: inline-block;
+  /* position: absolute; */
+  display: inline;
   z-index: 5;
 }
 
 .progressBar {
   z-index: -1;
-  margin-top: -33px;
+  margin-top: -2.6rem;
   position: absolute;
   overflow: hidden;
   width: 0px;
@@ -418,51 +454,57 @@ nav {
 
 .cleanbar,
 .filledbar {
-  height: 27px;
-  width: 256px;
+  height: 20px;
+  width: 156px;
+}
+
+.player-buttons {
+  display: flex;
+  justify-content: center;
 }
 
 .playButton,
 .pauseButton {
+  display: inline;
   background-color: inherit;
   border: none;
-  height: 27px;
-  width: 27px;
+  height: 20px;
+  width: 20px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .playButton {
-  background-image: url("images/playw.png");
+  background-image: url("images/playw.svg");
 }
 
 #homeplay {
-  background-image: url("images/play.png");
+  background-image: url("images/play.svg");
 }
 
 #homeplay:hover {
-  background-image: url("images/playhover.png");
+  background-image: url("images/playhover.svg");
 }
 
 #homepause {
-  background-image: url("images/pause.png");
+  background-image: url("images/pause.svg");
 }
 
 #homepause:hover {
-  background-image: url("images/pausehover.png");
+  background-image: url("images/pausehover.svg");
 }
 
 .pauseButton {
-  background-image: url("images/pausew.png");
+  background-image: url("images/pausew.svg");
 }
 
 .playButton:hover {
-  background-image: url("images/playwhover.png");
+  background-image: url("images/playwhover.svg");
 }
 
 .pauseButton:hover {
-  background-image: url("images/pausewhover.png");
+  background-image: url("images/pausewhover.svg");
 }
 
 .playButton:active,
@@ -471,30 +513,57 @@ nav {
   top: 2px;
 }
 
-.buytrack-button {
-  border: 1.9px solid white;
+/* .buytrack-button {
+  border: 0.5px solid white;
   position: absolute;
   background-color: inherit;
-  margin-left: 275px;
+  margin-left: 175px;
   margin-top: 4px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
+} */
+
+.buytrack-button {
+  display: inline;
+  /* position: absolute; */
+  /* margin-left: 175px;
+  margin-top: 10px; */
+  background-image: url("images/buysongw.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 20px;
+  width: 35px;
+  background-color: inherit;
+  border: none;
+  margin: 0.6rem;
+  /* padding: 1rem; */
+  overflow-y: visible;
 }
 
 #btnblack {
   border-color: black;
   color: black;
+  background-image: url("images/buysong.svg");
 }
 
-.buytrack-button:hover {
+/* .buytrack-button:hover {
   color: black;
   background-color: white;
   text-decoration: none;
+} */
+
+.buytrack-button:hover {
+  background-image: url("images/buysongwhover.svg");
 }
 
-#btnblack:hover {
+/* #btnblack:hover {
   color: var(--mint);
   background-color: black;
+} */
+
+#btnblack:hover {
+  background-image: url("images/buysonghover.svg");
 }
 
 .playButton, .pauseButton, .defaultBar {
@@ -503,12 +572,16 @@ nav {
 
 .song-name {
   margin-left: 90px;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: white;
 }
 
 .subtext {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+}
+
+#home-cover {
+  margin-bottom: 7rem;
 }
 
 /* #song-container {
@@ -519,17 +592,21 @@ nav {
 
 @media only screen and (min-width: 641px) and (max-width: 800px) {
 
-  .home-name {
+  /* .home-name {
     font-size: 4rem;
-  }
+  } */
 
   .scroll-down {
-    margin-top: 12rem;
+    margin-top: 16rem;
   }
 
   .video-frame {
     height: 60%;
     margin-top: 17%;
+  }
+
+  .button {
+    font-size: 1.5rem;
   }
 }
 
@@ -603,6 +680,14 @@ nav {
     pointer-events: auto;
   }
 
+  .btn-center {
+    margin-top: 6rem;
+  }
+
+  .button {
+    font-size: 2rem;
+  }
+
   .button-buy {
     border-radius: 25px;
     border: 1.5px solid white;
@@ -625,26 +710,29 @@ nav {
   .cleanbar,
   .filledbar {
     height: 50px;
-    width: 474px;
+    width: 462px;
   }
 
   .progressBar {
-    margin-top: -56px;
+    margin-top: -5.6rem;
   }
 
   .buytrack-button {
-    border: 2.9px solid white;
+    /* border: 2.9px solid white;
     margin-left: 520px;
-    margin-top: 5px;
-    font-size: 2.38rem;
+    margin-top: 4px;
+    padding-top: 8px;
+    font-size: 2.38rem; */
+    height: 50px;
+    width: 80px;
   }
 
-  #btnblack {
+  /* #btnblack {
     border-color:black;
-  }
+  } */
 
   .song-name {
-    margin-left: 135px;
+    margin-left: 16rem;
     font-size: 2.5rem;
   }
 
@@ -655,12 +743,12 @@ nav {
 
 @media only screen and (min-width: 801px) and (max-width: 900px) {
 
-  .home-name {
+  /* .home-name {
     font-size: 5rem;
-  }
+  } */
 
   .scroll-down {
-    margin-top: 16rem;
+    margin-top: 24rem;
   }
 
   .video-frame {
@@ -671,12 +759,12 @@ nav {
 
 @media only screen and (min-width: 901px) and (max-width: 1007px) {
 
-  .home-name {
+  /* .home-name {
     font-size: 5.7rem;
-  }
+  } */
 
   .scroll-down {
-    margin-top: 16rem;
+    margin-top: 28rem;
   }
 
   .video-frame {
@@ -692,12 +780,12 @@ nav {
 @media only screen and (min-width: 1008px) and (max-width: 1200px) {
   /* For large screens: */
 
-  .home-name {
+  /* .home-name {
     font-size: 6.5rem;
-  }
+  } */
 
   .scroll-down {
-    margin-top: 21rem;
+    margin-top: 33rem;
   }
 
   .about,
@@ -737,12 +825,12 @@ nav {
 @media only screen and (min-width: 1201px) {
    /* For large screens: */
 
-   .home-name {
+   /* .home-name {
      font-size: 7.5rem;
-   }
+   } */
 
    .scroll-down {
-     margin-top: 27rem;
+     margin-top: 43rem;
    }
 
    .about,

@@ -72,7 +72,6 @@ function playTrack(event) {
   var track = nav.getElementsByClassName("track");
   var bar = nav.getElementsByClassName("progressBar");
   barSize = nav.getElementsByClassName("cleanbar")[0].offsetWidth;
-  console.log(barSize);
   track[0].play();
   setInterval(function() {update(track[0], bar[0])}, 500);
 }
