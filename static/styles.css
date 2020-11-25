@@ -433,7 +433,7 @@ video {
 /* audio player */
 
 nav {
-  width: 313px;
+  width: 100%;
   /* margin-left: 15%; */
   display: block;
   margin: auto;
@@ -451,7 +451,7 @@ nav {
   margin-top: -2.6rem;
   position: absolute;
   overflow: hidden;
-  width: 0px;
+  width: 100%;
 }
 
 /* .player-buttons {
@@ -614,6 +614,10 @@ nav {
 
   .button {
     font-size: 1.5rem;
+  }
+
+  nav {
+    width: 313px;
   }
 }
 
