@@ -10,8 +10,8 @@
 {% endblock %}
 
 {% block lang %}
-<a href="/lt">LT</a>
-<a href="/">EN</a>
+<a id="lang-btn" href="/lt">LT</a>
+<a id="lang-btn" href="/">EN</a>
 {% endblock %}
 
 {% block main %}
@@ -21,35 +21,41 @@
     <!-- <source src="../static/video/TEST.mp4" type="video/mp4">
     <source src="../static/video/TEST.webm" type="video/webm"> -->
   </video>
-  <img class="home-logo" src="../static/images/logo.png">
-  <p class="center home-name">IN THE NOWHERE WITHOUT THE NO</p>
-  <img class="scroll-down" src="../static/images/scroll-down.png">
+  <!-- <img class="home-logo" src="../static/images/logo.png">
+  <p class="center home-name">IN THE NOWHERE WITHOUT THE NO</p> -->
+  <div class="scroll-down">
+    <img class="scroll-down-img" src="../static/images/scroll-down.svg">
+  </div>
 </div>
 
 <section id="videos" class = "bg bgwhite">
-<div class = "video-container">
-  <button class = "video-btn" id="video-btn" data-toggle="modal"
-  data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
-    <p class = "center video-name">LAZY<br>LUCY<br>LADY</p>
-  </button>
-  <button class = "video-btn" id="video-btn" data-toggle="modal"
-  data-src="https://www.youtube.com/embed/sSqOZxR-HI4" data-target="#video-modal">
-    <p class = "center video-name two-lines">BORN &<br>DYING</p>
-  </button>
-  <button class = "video-btn" id="video-btn" data-toggle="modal"
-  data-src="https://www.youtube.com/embed/YgSPaXgAdzE" data-target="#video-modal">
-    <p class = "center video-name two-lines">SOAK &<br>SMOKE</p>
-  </button>
-  <button class = "video-btn" id="video-btn" data-toggle="modal"
-  data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
-    <p class = "center video-name two-lines">IN<br>POCKET</p>
-  </button>
-  <button class = "video-btn" id="video-btn" data-toggle="modal"
-  data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
-    <p class = "center video-name">MR.<br>FANTAS-<br>TIQUE</p>
-  </button>
-  <div class = "video-btn filler"></div>
-</div>
+  <div class = "video-container">
+    <button class = "video-btn" id="video-btn" data-toggle="modal"
+    data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
+      <p class = "center video-name">LAZY<br>LUCY<br>LADY</p>
+    </button>
+    <button class = "video-btn" id="video-btn" data-toggle="modal"
+    data-src="https://www.youtube.com/embed/sSqOZxR-HI4" data-target="#video-modal">
+      <p class = "center video-name two-lines">BORN &<br>DYING</p>
+    </button>
+    <button class = "video-btn" id="video-btn" data-toggle="modal"
+    data-src="https://www.youtube.com/embed/YgSPaXgAdzE" data-target="#video-modal">
+      <p class = "center video-name two-lines">SOAK &<br>SMOKE</p>
+    </button>
+    <button class = "video-btn" id="video-btn" data-toggle="modal"
+    data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
+      <p class = "center video-name">MRS.<br>FANTAS-<br>TIQUE</p>
+    </button>
+    <button class = "video-btn" id="video-btn" data-toggle="modal"
+    data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
+      <p class = "center video-name two-lines">HOMMIE</p>
+    </button>
+    <button class = "video-btn" id="video-btn" data-toggle="modal"
+    data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
+      <p class = "center video-name two-lines">EARLY<br>MAN</p>
+    </button>
+    <!-- <div class = "video-btn filler"></div> -->
+  </div>
 </section>
 
 <div class = "bg about">
@@ -59,22 +65,20 @@
   WITHOUT<br>
   THE NO</p>
 <p class = "about-text center">
-  Sea child with a small bird heart.<br>
-  In Eternal play on the shore.<br><br>
-  Audio visual album<br><br>
-  I am Animal I meet in boredom.<br>
-  It is the desire of happiness left in its pure state.<br>
-  The process of life and death is so fantastic,  I live like never going to die,
-  and i am already.<br><br>
-  While man always has the world before him – always only stands “facing opposite”
-  and never enters “pure space” of the outside – the animal instead moves in the
-  open “in a nowhere without the no”<br>
-  This album is about desire to expand inner nature, who is dancing as life it self.<br>
-  About animality of the inside, the instinct, the feel of what comes from within.<br>
-  About the company of two wolfs  who i teach to howl harmonically on my own funeral.<br>
-  About holding the mirror and trying to see who are you not, trying to grasp, how much
-  of the man in the monkey there are.<br><br>
-<div class="btn-center center"><a href="#contact" class = "button bold"> BOOK UMIKO KOTORI</a>
+  Jūros vaikas su maža paukščio širdele.<br>
+„Amžiname žaidime ant kranto“.<br>
+Audio vizualinis albumas „Niekur, be ne“<br><br>
+Aš esu gyvūnas, kurį sutinku nuobodžiaudamas.<br>
+Tai laimės troškimas, paliktas grynoje būsenoje.<br>
+Gyvenimo ir mirties procesas yra toks fantastiškas, aš gyvenu taip, tarsi niekada
+ nemirčiau, o aš jau mirštu.<br>
+Nors žmogus visada turi pasaulį prieš save - visada stovi tik „priešais“ ir niekada
+nepatenka į „gryną išorės erdvę“ - gyvūnas vietoj to juda lauke „niekur be be“.<br>
+Šis albumas yra apie norą praplėsti vidinę prigimtį, kuri šoka kaip gyvenimas pats.<br>
+Apie vidinį gyvuliškumą, instinktą, pajautimą to, kas ateina iš vidaus.<br>
+Apie dviejų vilkų kompaniją, kurią aš mokau harmoningai kaukti savo laidotuvėse.<br>
+Apie veidrodžio laikymą ir bandymą pamatyti, kas tu nesi, bandymas suvokti, kiek yra beždžionėje esančio žmogaus.</p>
+<div class="btn-center center"><a href="#contact" class = "bookbtn bold"> BOOK UMIKO KOTORI</a>
 </div>
 </div>
 
@@ -106,8 +110,8 @@
 
   <nav>
     <audio class="track">
-      <source src="../static/audio/inthenowhere/lazyloosylady.ogg" type="audio/ogg" />
-      <source src="../static/audio/inthenowhere/lazyloosylady.mp3" type="audio/mpeg" />
+      <source src="../static/audio/inthenowhere/lazylucylady.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/lazylucylady.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
     </audio>
     <span class="bold song-name" id="black">Lazy Lucy Lady</span>
@@ -187,11 +191,11 @@
 
   <nav>
     <audio class="track">
-      <source src="../static/audio/inthenowhere/mrfantastique.ogg" type="audio/ogg" />
-      <source src="../static/audio/inthenowhere/mrfantastique.mp3" type="audio/mpeg" />
+      <source src="../static/audio/inthenowhere/mrsfantastique.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/mrsfantastique.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
     </audio>
-    <span class="bold song-name" id="black">Mr. Fantastique</span>
+    <span class="bold song-name" id="black">Mrs. Fantastique</span>
     <div class="player-buttons">
       <button type="button" class="playButton" id="homeplay"></button>
       <button type="button" class="pauseButton" id="homepause"></button>
@@ -308,8 +312,8 @@
 
   <nav>
     <audio class="track">
-      <source src="../static/audio/inthenowhere/visatatu.ogg" type="audio/ogg" />
-      <source src="../static/audio/inthenowhere/visatatu.mp3" type="audio/mpeg" />
+      <source src="../static/audio/inthenowhere/visata.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/visata.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
     </audio>
     <span class="bold song-name" id="black">Visata tu</span>

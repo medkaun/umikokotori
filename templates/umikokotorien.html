@@ -10,8 +10,8 @@
 {% endblock %}
 
 {% block lang %}
-<a href="/lt">LT</a>
-<a href="/">EN</a>
+<a id="lang-btn" href="/lt">LT</a>
+<a id="lang-btn" href="/">EN</a>
 {% endblock %}
 
 {% block main %}
@@ -24,7 +24,7 @@
   <!-- <img class="home-logo" src="../static/images/logo.png">
   <p class="center home-name">IN THE NOWHERE WITHOUT THE NO</p> -->
   <div class="scroll-down">
-    <img class="scroll-down-img" src="../static/images/scroll-down.png">
+    <img class="scroll-down-img" src="../static/images/scroll-down.svg">
   </div>
 </div>
 
@@ -44,13 +44,17 @@
   </button>
   <button class = "video-btn" id="video-btn" data-toggle="modal"
   data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
-    <p class = "center video-name two-lines">IN<br>POCKET</p>
+    <p class = "center video-name">MRS.<br>FANTAS-<br>TIQUE</p>
   </button>
   <button class = "video-btn" id="video-btn" data-toggle="modal"
   data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
-    <p class = "center video-name">MR.<br>FANTAS-<br>TIQUE</p>
+    <p class = "center video-name two-lines">HOMMIE</p>
   </button>
-  <div class = "video-btn filler"></div>
+  <button class = "video-btn" id="video-btn" data-toggle="modal"
+  data-src="https://www.youtube.com/embed/opj8IHkD97Q" data-target="#video-modal">
+    <p class = "center video-name two-lines">EARLY<br>MAN</p>
+  </button>
+  <!-- <div class = "video-btn filler"></div> -->
 </div>
 </section>
 
@@ -63,11 +67,11 @@
 <p class = "about-text center">
   Sea child with a small bird heart.<br>
   In Eternal play on the shore.<br><br>
-  Audio visual album<br><br>
+  Audio visual album “In the nowhere without the no”<br><br>
   I am Animal I meet in boredom.<br>
   It is the desire of happiness left in its pure state.<br>
-  The process of life and death is so fantastic,  I live like never going to die,
-  and i am already.<br><br>
+  The process of life and death is so fantastic,  I live as if never going to die,
+  and i am already dying.<br><br>
   While man always has the world before him – always only stands “facing opposite”
   and never enters “pure space” of the outside – the animal instead moves in the
   open “in a nowhere without the no”<br>
@@ -76,7 +80,7 @@
   About the company of two wolfs  who i teach to howl harmonically on my own funeral.<br>
   About holding the mirror and trying to see who are you not, trying to grasp, how much
   of the man in the monkey there are.<br><br>
-<div class="btn-center center"><a href="#contact" class = "button bold"> BOOK UMIKO KOTORI</a>
+<div class="btn-center center"><a href="#contact" class = "bookbtn bold"> BOOK UMIKO KOTORI</a>
 </div>
 </div>
 
@@ -108,8 +112,8 @@
 
   <nav>
     <audio class="track">
-      <source src="../static/audio/inthenowhere/lazyloosylady.ogg" type="audio/ogg" />
-      <source src="../static/audio/inthenowhere/lazyloosylady.mp3" type="audio/mpeg" />
+      <source src="../static/audio/inthenowhere/lazylucylady.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/lazylucylady.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
     </audio>
     <span class="bold song-name" id="black">Lazy Lucy Lady</span>
@@ -189,11 +193,11 @@
 
   <nav>
     <audio class="track">
-      <source src="../static/audio/inthenowhere/mrfantastique.ogg" type="audio/ogg" />
-      <source src="../static/audio/inthenowhere/mrfantastique.mp3" type="audio/mpeg" />
+      <source src="../static/audio/inthenowhere/mrsfantastique.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/mrsfantastique.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
     </audio>
-    <span class="bold song-name" id="black">Mr. Fantastique</span>
+    <span class="bold song-name" id="black">Mrs. Fantastique</span>
     <div class="player-buttons">
       <button type="button" class="playButton" id="homeplay"></button>
       <button type="button" class="pauseButton" id="homepause"></button>
@@ -310,8 +314,8 @@
 
   <nav>
     <audio class="track">
-      <source src="../static/audio/inthenowhere/visatatu.ogg" type="audio/ogg" />
-      <source src="../static/audio/inthenowhere/visatatu.mp3" type="audio/mpeg" />
+      <source src="../static/audio/inthenowhere/visata.ogg" type="audio/ogg" />
+      <source src="../static/audio/inthenowhere/visata.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
     </audio>
     <span class="bold song-name" id="black">Visata tu</span>

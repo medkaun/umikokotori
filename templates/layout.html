@@ -25,7 +25,6 @@
       <button class="dropbtn" id="dropbtn" aria-expanded="false"></button>
       <div id = "navbar" class = "navbar">
         <div>
-          <a href="/" id="home-mobile">HOME</a>
           <a href="#videos">SEE</a>
           <a href="#song-container">LISTEN</a>
           {% block uk %}
@@ -54,11 +53,16 @@
             <a class = "contact-icon" href="https://youtube.com"><img class="yt" src="../static/images/yt.png"></a>
           </div>
           <p class="semi-bold center contact-text">WANT EAR<br>MAGIC?</p>
-          <p class="semi-bold center contact-email">BOOK THE EXPERIENCE:<br><a class="yellow" href="/">umikokotori@gmail.com</a></p>
-          <p class="center">SPONSORS:</p>
-          <div class="sponsor-logos">
-            <img class="sponsor" src="../static/images/agata.png">
-            <img class="sponsor" src="../static/images/ltk_lt.png">
+          <div class="contact-flex">
+            <p class="semi-bold center contact-email">BOOK THE EXPERIENCE:
+            <a class="yellow" href="/">umikokotori@gmail.com</a></p>
+          </div>
+          <div class = "contact-flex">
+            <div><p class="center semi-bold">SPONSORS:</p></div>
+            <div class="sponsor-logos">
+              <img class="sponsor" src="../static/images/agata.png">
+              <img class="sponsor" src="../static/images/ltk_lt.png">
+            </div>
           </div>
         </section>
         <script src="{{url_for('static', filename='script.js')}}"></script>

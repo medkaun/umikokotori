@@ -38,17 +38,7 @@ var tracks = document.getElementsByClassName("track");
 var playButton = document.getElementsByClassName("playButton");
 var pauseButton = document.getElementsByClassName("pauseButton");
 
-// var defaultBar = document.getElementsByClassName("cleanbar");
 var barSize;
-// const x = window.matchMedia("(max-width: 800px)");
-
-// function setBarSize(x) {
-//   if (x.matches) { // If media query matches
-//     barSize=256;
-//   } else {
-//    barSize=474;
-//   }
-// }
 
 for (var i = 0 ; i < playButton.length; i++){
   playButton[i].addEventListener('click', playTrack);
@@ -93,7 +83,7 @@ function update(track, bar) {
   }
 }
 
-//scroll to top
+//home button
 
 const btnHome = document.getElementById("home-nav");
 
@@ -106,6 +96,7 @@ window.addEventListener("scroll", function() {
   }
 })
 
+// burger menu
 
 const drop = document.getElementById("dropbtn");
 const navbar = document.getElementById("navbar");
